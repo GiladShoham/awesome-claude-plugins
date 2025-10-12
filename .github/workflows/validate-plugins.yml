@@ -4,13 +4,13 @@ on:
   pull_request:
     paths:
       - 'plugins/**/.claude-plugin/plugin.json'
-      - 'marketplace.json'
+      - '.claude-plugin/marketplace.json'
   push:
     branches:
       - main
     paths:
       - 'plugins/**/.claude-plugin/plugin.json'
-      - 'marketplace.json'
+      - '.claude-plugin/marketplace.json'
 
 jobs:
   validate:
@@ -27,7 +27,7 @@ jobs:
       - name: Validate marketplace.json
         run: |
           echo "Validating marketplace.json..."
-          if ! jq empty marketplace.json; then
+          if ! jq empty .claude-plugin/marketplace.json; then
             echo "❌ marketplace.json is not valid JSON"
             exit 1
           fi
@@ -52,9 +52,10 @@ jobs:
       - name: Validate plugin references in marketplace.json
         run: |
           echo "Validating plugin references..."
-          for plugin in $(jq -r '.plugins[]' marketplace.json); do
-            if [ ! -f "$plugin" ]; then
-              echo "❌ Referenced plugin file not found: $plugin"
+          for plugin_source in $(jq -r '.plugins[].source' .claude-plugin/marketplace.json); do
+            plugin_file="$plugin_source/.claude-plugin/plugin.json"
+            if [ ! -f "$plugin_file" ]; then
+              echo "❌ Referenced plugin file not found: $plugin_file"
               exit 1
             fi
           done
