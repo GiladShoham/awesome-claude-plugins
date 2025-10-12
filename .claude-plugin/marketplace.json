@@ -1,0 +1,27 @@
+{
+  "name": "awesome-claude-plugins",
+  "owner": {
+    "name": "Gilad Shoham",
+    "email": "gilad@example.com",
+    "url": "https://github.com/GiladShoham"
+  },
+  "metadata": {
+    "description": "A curated marketplace of awesome plugins for Claude",
+    "version": "1.0.0",
+    "homepage": "https://github.com/GiladShoham/awesome-claude-plugins"
+  },
+  "plugins": [
+    {
+      "name": "example-calculator",
+      "source": "./plugins/example-calculator"
+    },
+    {
+      "name": "example-weather",
+      "source": "./plugins/example-weather"
+    },
+    {
+      "name": "example-translator",
+      "source": "./plugins/example-translator"
+    }
+  ]
+}

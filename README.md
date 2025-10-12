@@ -8,6 +8,44 @@ This repository serves as a plugin marketplace for Claude, providing a centraliz
 
 **Note:** The plugin examples and structure in this repository are based on the [official Claude Code plugin examples](https://github.com/anthropics/claude-code/tree/main/plugins).
 
+## 🚀 Quick Start
+
+### Add Marketplace from GitHub
+
+Add this marketplace to Claude Code:
+
+```bash
+/plugin marketplace add GiladShoham/awesome-claude-plugins
+```
+
+### Test Marketplace Locally
+
+Before publishing, you can test the marketplace locally:
+
+```bash
+/plugin marketplace add /path/to/awesome-claude-plugins
+```
+
+### Browse and Install Plugins
+
+Then browse and install individual plugins:
+
+```bash
+/plugin
+```
+
+Install a specific plugin:
+
+```bash
+/plugin install example-calculator@awesome-claude-plugins
+```
+
+List installed marketplaces:
+
+```bash
+/plugin marketplace list
+```
+
 ## Marketplace Structure
 
 This marketplace follows the Claude plugin marketplace format:
@@ -32,9 +70,9 @@ Browse the `plugins/` directory to discover available plugins. Each plugin inclu
 
 ### Example Plugins
 
-- **Calculator Plugin** (`example-calculator`) - Basic arithmetic and scientific calculations
-- **Weather Plugin** (`example-weather`) - Weather information and forecasts
-- **Translator Plugin** (`example-translator`) - Multi-language translation support
+- **Calculator Plugin** (`example-calculator`) v1.0.0 - A simple calculator plugin for performing basic arithmetic operations
+- **Weather Plugin** (`example-weather`) v1.2.0 - Get current weather information and forecasts for any location
+- **Translator Plugin** (`example-translator`) v2.0.0 - Translate text between multiple languages with high accuracy
 
 ## Adding Your Plugin
 
