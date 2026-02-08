@@ -1,0 +1,9 @@
+{
+  "name": "agentstore",
+  "version": "1.0.0",
+  "description": "Open-source plugin marketplace with gasless USDC payments. Browse, install, and publish Claude Code plugins. Publishers earn 80% of sales.",
+  "author": {
+    "name": "techgangboss",
+    "email": "techgangboss@users.noreply.github.com"
+  }
+}
