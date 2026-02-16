@@ -177,6 +177,10 @@ This marketplace is licensed under the MIT License. See [LICENSE](LICENSE) for d
 
 Individual plugins may have their own licenses - please check each plugin's repository for details.
 
+## Resources
+
+- [Claudebin](https://claudebin.com) ([GitHub](https://github.com/wunderlabs-dev/claudebin.com/)) - A minimalistic tool for publishing and sharing Claude coding sessions.
+
 ## Support
 
 For issues or questions:
