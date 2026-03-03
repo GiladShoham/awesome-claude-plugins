@@ -1,0 +1,13 @@
+{
+  "name": "skillboss-ai-gateway",
+  "version": "1.0.0",
+  "description": "Unified AI gateway for 100+ services (Claude, GPT, Gemini, DALL-E, Midjourney, Runway, ElevenLabs). One API key, OpenAI-compatible.",
+  "author": {
+    "name": "SkillBoss",
+    "url": "https://skillboss.co"
+  },
+  "homepage": "https://github.com/heeyo-life/skillboss-mcp",
+  "repository": "https://github.com/heeyo-life/skillboss-mcp",
+  "license": "MIT",
+  "keywords": ["ai-gateway", "mcp", "claude", "gpt", "gemini", "image-generation", "video-generation"]
+}
