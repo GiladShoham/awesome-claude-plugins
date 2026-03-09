@@ -73,6 +73,7 @@ Browse the `plugins/` directory to discover available plugins. Each plugin inclu
 - **Calculator Plugin** (`example-calculator`) v1.0.0 - A simple calculator plugin for performing basic arithmetic operations
 - **Weather Plugin** (`example-weather`) v1.2.0 - Get current weather information and forecasts for any location
 - **Translator Plugin** (`example-translator`) v2.0.0 - Translate text between multiple languages with high accuracy
+- **BGPT MCP** (`bgpt-mcp`) v1.0.0 - MCP server for searching scientific papers with full-text experimental data. 50 free searches, no API key needed.
 
 ## Adding Your Plugin
 

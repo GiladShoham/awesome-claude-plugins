@@ -1,0 +1,9 @@
+{
+  "name": "bgpt-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for searching scientific papers with full-text experimental data. 50 free searches, no API key needed. Tool: search_papers.",
+  "author": {
+    "name": "Conner Lambden",
+    "email": "conner@bgpt.pro"
+  }
+}
