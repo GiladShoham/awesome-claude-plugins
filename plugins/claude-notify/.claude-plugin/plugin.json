@@ -1,0 +1,12 @@
+{
+  "name": "claude-notify",
+  "version": "0.1.0",
+  "description": "Notification center for Claude Code. Get notified when background agents finish, tasks complete, or Claude is waiting for input. Supports desktop (macOS/Linux/Windows), Telegram, Slack, Teams, Lark/Feishu, and custom webhooks.",
+  "author": {
+    "name": "dz1922",
+    "url": "https://github.com/dz1922"
+  },
+  "homepage": "https://github.com/dz1922/claude-notify",
+  "repository": "https://github.com/dz1922/claude-notify",
+  "license": "MIT"
+}
