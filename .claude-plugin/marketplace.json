@@ -22,6 +22,18 @@
     {
       "name": "example-translator",
       "source": "./plugins/example-translator"
+    },
+    {
+      "name": "kreuzberg",
+      "source": "./plugins/kreuzberg"
+    },
+    {
+      "name": "kreuzcrawl",
+      "source": "./plugins/kreuzcrawl"
+    },
+    {
+      "name": "kreuzberg-cloud",
+      "source": "./plugins/kreuzberg-cloud"
     }
   ]
 }

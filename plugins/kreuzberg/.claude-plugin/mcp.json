@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kreuzberg": {
+      "command": "kreuzberg",
+      "args": ["mcp", "--transport", "stdio"]
+    }
+  }
+}

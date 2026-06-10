@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kreuzcrawl": {
+      "command": "kreuzcrawl",
+      "args": ["mcp"]
+    }
+  }
+}
