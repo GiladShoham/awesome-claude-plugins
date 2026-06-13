@@ -22,6 +22,10 @@
     {
       "name": "example-translator",
       "source": "./plugins/example-translator"
+    },
+    {
+      "name": "hermes-tweet",
+      "source": "./plugins/hermes-tweet"
     }
   ]
 }
