@@ -1,0 +1,11 @@
+{
+  "name": "notfair-marketing-skills",
+  "version": "1.0.0",
+  "description": "Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads. Connects to live account data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP. Covers site analysis, keyword research, meta tags, schema markup, ad audits, wasted-spend detection, and creative fatigue analysis.",
+  "author": {
+    "name": "NotFair",
+    "email": "hi@notfair.co"
+  },
+  "repository": "https://github.com/nowork-studio/NotFair",
+  "license": "MIT"
+}
