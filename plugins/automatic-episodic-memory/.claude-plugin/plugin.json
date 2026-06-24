@@ -1,0 +1,9 @@
+{
+  "name": "automatic-episodic-memory",
+  "version": "1.0.0",
+  "description": "Episodic memory with automatic recall for Claude Code: captures work across context compactions and surfaces relevant past episodes automatically on prompts, tool calls, and turn end, with no manual logging or lookup.",
+  "author": {
+    "name": "automattf",
+    "email": "matthew.francis@saasfactory.vc"
+  }
+}
