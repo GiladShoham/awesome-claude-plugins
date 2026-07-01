@@ -1,0 +1,13 @@
+{
+  "name": "xberg",
+  "description": "Local document extraction: text, tables, metadata, images from 91+ formats with optional OCR.",
+  "version": "0.2.2",
+  "author": {
+    "name": "Kreuzberg, Inc.",
+    "email": "contact@xberg.io"
+  },
+  "homepage": "https://xberg.io",
+  "repository": "https://github.com/xberg-io/plugins",
+  "license": "MIT",
+  "keywords": ["document-intelligence", "extraction", "ocr", "pdf", "tables"]
+}

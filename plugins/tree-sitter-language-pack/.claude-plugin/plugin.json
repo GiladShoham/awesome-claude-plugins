@@ -1,0 +1,13 @@
+{
+  "name": "tree-sitter-language-pack",
+  "description": "Parse and extract code intelligence from 300+ programming languages with tree-sitter — structure, imports, symbols, and syntax-aware chunking.",
+  "version": "0.2.2",
+  "author": {
+    "name": "Kreuzberg, Inc.",
+    "email": "contact@xberg.io"
+  },
+  "homepage": "https://xberg.io",
+  "repository": "https://github.com/xberg-io/plugins",
+  "license": "MIT",
+  "keywords": ["tree-sitter", "code-intelligence", "parsing", "chunking", "static-analysis"]
+}

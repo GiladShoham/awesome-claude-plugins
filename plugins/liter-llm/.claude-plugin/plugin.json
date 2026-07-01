@@ -1,0 +1,13 @@
+{
+  "name": "liter-llm",
+  "description": "Universal LLM API client for 143 providers — chat, streaming, tools, embeddings, search, OCR, plus an OpenAI-compatible proxy and an MCP server.",
+  "version": "0.2.2",
+  "author": {
+    "name": "Kreuzberg, Inc.",
+    "email": "contact@xberg.io"
+  },
+  "homepage": "https://xberg.io",
+  "repository": "https://github.com/xberg-io/plugins",
+  "license": "MIT",
+  "keywords": ["llm", "openai", "proxy", "embeddings", "mcp"]
+}

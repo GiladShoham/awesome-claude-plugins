@@ -24,16 +24,24 @@
       "source": "./plugins/example-translator"
     },
     {
-      "name": "kreuzberg",
-      "source": "./plugins/kreuzberg"
+      "name": "xberg",
+      "source": "./plugins/xberg"
     },
     {
-      "name": "kreuzcrawl",
-      "source": "./plugins/kreuzcrawl"
+      "name": "crawlberg",
+      "source": "./plugins/crawlberg"
     },
     {
-      "name": "kreuzberg-cloud",
-      "source": "./plugins/kreuzberg-cloud"
+      "name": "html-to-markdown",
+      "source": "./plugins/html-to-markdown"
+    },
+    {
+      "name": "liter-llm",
+      "source": "./plugins/liter-llm"
+    },
+    {
+      "name": "tree-sitter-language-pack",
+      "source": "./plugins/tree-sitter-language-pack"
     }
   ]
 }

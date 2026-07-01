@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "liter-llm": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/scripts/mcp-launch.sh",
+      "args": ["mcp", "--transport", "stdio"]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "html-to-markdown",
+  "description": "Fast, lossless HTML→Markdown conversion with structured metadata, tables, and document-structure extraction.",
+  "version": "0.2.2",
+  "author": {
+    "name": "Kreuzberg, Inc.",
+    "email": "contact@xberg.io"
+  },
+  "homepage": "https://xberg.io",
+  "repository": "https://github.com/xberg-io/plugins",
+  "license": "MIT",
+  "keywords": ["html-to-markdown", "markdown", "html", "conversion", "metadata"]
+}
