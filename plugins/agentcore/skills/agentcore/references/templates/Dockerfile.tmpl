@@ -1,0 +1,19 @@
+FROM public.ecr.aws/docker/library/python:3.12-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl jq git \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY main.py /app/main.py
+COPY runtime-metadata.json /app/runtime-metadata.json
+
+# Agent scripts
+COPY scripts/ /app/scripts/
+RUN chmod +x /app/scripts/*.sh 2>/dev/null || true
+ENV PATH="/app/scripts:${PATH}"
+
+# Skills
+# COPY skills/ /app/skills/
+
+CMD ["python3", "/app/main.py"]

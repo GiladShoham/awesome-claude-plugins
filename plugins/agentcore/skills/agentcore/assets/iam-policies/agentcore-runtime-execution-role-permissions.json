@@ -1,0 +1,39 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "InvokeSpecificModelsOnly",
+      "Effect": "Allow",
+      "Action": ["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream"],
+      "Resource": [
+        "arn:aws:bedrock:<REGION>:<ACCOUNT_ID>:inference-profile/global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "arn:aws:bedrock:<REGION>::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "arn:aws:bedrock:::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0"
+      ]
+    },
+    {
+      "Sid": "RuntimeWorkloadIdentity",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetWorkloadAccessTokenForJWT"
+      ],
+      "Resource": "arn:aws:bedrock-agentcore:<REGION>:<ACCOUNT_ID>:workload-identity-directory/default/workload-identity/*"
+    },
+    {
+      "Sid": "ObservabilityScopedToNamespace",
+      "Effect": "Allow",
+      "Action": ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"],
+      "Resource": "arn:aws:logs:<REGION>:<ACCOUNT_ID>:log-group:/aws/bedrock-agentcore/*"
+    },
+    {
+      "Sid": "MetricsScopedToNamespace",
+      "Effect": "Allow",
+      "Action": "cloudwatch:PutMetricData",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": { "cloudwatch:namespace": "bedrock-agentcore" }
+      }
+    }
+  ]
+}
