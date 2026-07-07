@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schema.agentcore.aws.dev/v1/agentcore.json",
+  "name": "{{PROJECT_NAME}}",
+  "version": 1,
+  "managedBy": "CDK",
+  "tags": {
+    "agentcore:created-by": "agentcore-migration-skill",
+    "agentcore:project-name": "{{PROJECT_NAME}}"
+  },
+  "runtimes": [
+    {
+      "name": "{{AGENT_NAME}}",
+      "build": "CodeZip",
+      "entrypoint": "main.py",
+      "codeLocation": "app/{{AGENT_NAME}}/",
+      "runtimeVersion": "PYTHON_3_14",
+      "networkMode": "PUBLIC",
+      "protocol": "HTTP"
+    }
+  ],
+  "harnesses": [
+    {
+      "name": "{{HARNESS_NAME}}",
+      "path": "app/{{HARNESS_NAME}}"
+    }
+  ],
+  "memories": [],
+  "knowledgeBases": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "configBundles": [],
+  "abTests": [],
+  "datasets": [],
+  "payments": []
+}

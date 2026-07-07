@@ -1,0 +1,36 @@
+{
+  "skill_name": "agentcore",
+  "description": "Regression scenarios for the agentcore migration skill. Each prompt is run against the skill; the response (and any generated project) should satisfy expected_output. Judge manually or with an LLM-as-judge.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Migrate this repo to AgentCore. It has .github/agents/support.agent.md (persona + a `skills: [triage]` frontmatter, tools: read/search) and .github/skills/triage/SKILL.md. No scripts, no MCP.",
+      "expected_output": "Classifies the agent as a HARNESS (persona + skill + standard tools, no custom code) — NOT a code runtime. Generates app/support/harness.json (model + empty tools + skills) + system-prompt.md, and an agentcore-commands.sh that runs `agentcore add skill --harness support --path ...`. Does NOT generate main.py/Dockerfile for it. agentcore.json has the agent under harnesses[], runtimes[] empty. No 'agentcore add harness' for the pre-populated harness (would 'already exist')."
+    },
+    {
+      "id": 2,
+      "prompt": "Migrate an agent whose body calls .github/scripts/run-scan.sh, plus a second agent that is just persona + instructions.",
+      "expected_output": "Splits them: the script-bundling agent → CODE RUNTIME (app/<n>/main.py streaming Strands entrypoint, model/load.py, pyproject.toml, Dockerfile, scripts/run-scan.sh copied in); the persona-only agent → HARNESS. Report shows both targets. Does not force everything into code or everything into harness."
+    },
+    {
+      "id": 3,
+      "prompt": "My agent config references a stdio MCP server (command+args). Migrate it.",
+      "expected_output": "Flags the stdio MCP as MANUAL (cannot attach directly). Recommends publishing it as a remote streamable-HTTP endpoint (or hosting on AgentCore Runtime with --protocol MCP) then attaching as a harness remote_mcp tool or gateway target. Does NOT invent a direct stdio attachment. Preserves the original command/args for review."
+    },
+    {
+      "id": 4,
+      "prompt": "I have a Console-created AgentCore harness and I need to customize its agent loop. What do I do?",
+      "expected_output": "Uses `agentcore export harness --arn <arn>` to generate an editable Strands runtime agent, then read EXPORT_NOTES.md before deploy. Does NOT claim the harness is permanently locked / un-updatable (that pre-GA blocker is resolved). Mentions the export mirrors model/tools/skills/memory/limits."
+    },
+    {
+      "id": 5,
+      "prompt": "My migrated agent deploys fine but every invoke returns ThrottlingException: Too many tokens per day. Model access is enabled. What's wrong?",
+      "expected_output": "Identifies an account-level Bedrock DAILY TOKEN QUOTA (may be 0 by default even with access granted), not a skill/code bug. Tells the user to check `aws service-quotas list-service-quotas --service-code bedrock` and request an increase; notes the newest Claude quotas are not self-service adjustable (Support case). Does NOT suggest code changes."
+    },
+    {
+      "id": 6,
+      "prompt": "Secrets: my agent needs NEXUS_IQ_PASSCODE and a non-secret NEXUS_IQ_URL. How are these migrated?",
+      "expected_output": "Routes NEXUS_IQ_PASSCODE (matches secret pattern) to AgentCore Identity via `agentcore add credential --type api-key` OR a Secrets Manager ARN reference — NEVER written into generated files. NEXUS_IQ_URL (non-secret) goes to runtime envVars / harness --env. No secret values in agentcore.json or committed files."
+    }
+  ]
+}
