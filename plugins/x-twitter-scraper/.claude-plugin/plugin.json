@@ -1,0 +1,12 @@
+{
+  "name": "x-twitter-scraper",
+  "version": "2.4.16",
+  "description": "Research public X data through Xquik with source provenance and approval-gated actions.",
+  "author": {
+    "name": "Xquik",
+    "email": "support@xquik.com"
+  },
+  "homepage": "https://xquik.com",
+  "repository": "https://github.com/Xquik-dev/x-twitter-scraper",
+  "license": "MIT"
+}

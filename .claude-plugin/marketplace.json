@@ -22,6 +22,10 @@
     {
       "name": "example-translator",
       "source": "./plugins/example-translator"
+    },
+    {
+      "name": "x-twitter-scraper",
+      "source": "./plugins/x-twitter-scraper"
     }
   ]
 }

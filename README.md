@@ -50,11 +50,13 @@ List installed marketplaces:
 
 This marketplace follows the Claude plugin marketplace format:
 
-- `marketplace.json` - Marketplace metadata and configuration
+- `.claude-plugin/marketplace.json` - Marketplace metadata and configuration
 - `plugins/` - Directory containing individual plugin directories
 - Each plugin is a directory containing:
   - `.claude-plugin/` - Plugin configuration directory
     - `plugin.json` - Plugin metadata (JSON)
+  - `skills/` - Model-invoked skills in `<name>/SKILL.md` directories
+  - `.mcp.json` - Optional MCP server configuration
   - `hooks/` - Lifecycle hooks
   - `agents/` - Agent definitions
   - `commands/` - Custom commands
@@ -73,6 +75,7 @@ Browse the `plugins/` directory to discover available plugins. Each plugin inclu
 - **Calculator Plugin** (`example-calculator`) v1.0.0 - A simple calculator plugin for performing basic arithmetic operations
 - **Weather Plugin** (`example-weather`) v1.2.0 - Get current weather information and forecasts for any location
 - **Translator Plugin** (`example-translator`) v2.0.0 - Translate text between multiple languages with high accuracy
+- **Xquik X Research** (`x-twitter-scraper`) v2.4.16 - Research public X data with provenance and approval-gated actions
 
 ## Adding Your Plugin
 
@@ -85,6 +88,8 @@ To add your plugin to this marketplace:
    plugins/your-plugin-name/
    ├── .claude-plugin/         # Plugin configuration directory
    │   └── plugin.json         # Plugin metadata
+   ├── skills/                 # Model-invoked skills (optional)
+   ├── .mcp.json               # MCP server configuration (optional)
    ├── hooks/                  # Lifecycle hooks
    ├── agents/                 # Agent definitions
    └── commands/               # Custom commands
@@ -104,12 +109,14 @@ To add your plugin to this marketplace:
 }
 ```
 
-5. Validate your plugin definition locally:
+5. Register the plugin in `.claude-plugin/marketplace.json`
+
+6. Validate your plugin definition locally:
    ```bash
    ./validate-plugins.sh
    ```
 
-6. Submit a pull request with your plugin
+7. Submit a pull request with your plugin
 
 ### Plugin Guidelines
 
@@ -148,6 +155,8 @@ This script checks:
 - Required fields presence
 - Semantic versioning format
 - Filename consistency with plugin name
+- Valid MCP JSON when a plugin includes `.mcp.json`
+- Marketplace registration, unique names, and local source paths
 
 ### Automated CI Validation
 
