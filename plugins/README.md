@@ -12,6 +12,8 @@ Each plugin is organized as a directory with the following structure:
 plugin-name/
 ├── .claude-plugin/         # Plugin configuration directory
 │   └── plugin.json         # Plugin metadata (JSON)
+├── skills/                 # Model-invoked skills (optional)
+├── .mcp.json               # MCP server configuration (optional)
 ├── hooks/                  # Lifecycle hooks
 ├── agents/                 # Agent definitions
 └── commands/               # Custom commands
@@ -48,6 +50,17 @@ For more examples, see the [official Claude Code plugins](https://github.com/ant
 
 ## Plugin Components
 
+### Skills
+
+The optional `skills/` directory contains model-invoked skills as
+`skills/<name>/SKILL.md`. Use skills for reusable instructions and workflows.
+
+### MCP Servers
+
+The optional `.mcp.json` file declares MCP servers bundled with the plugin.
+Remote servers must declare an explicit transport type and keep credentials in
+environment-variable expansion rather than committed values.
+
 ### Hooks
 
 The `hooks/` directory contains event-based hooks that run at specific points during Claude Code execution. Hooks are defined in a `hooks.json` file and can be triggered by events such as:
@@ -83,6 +96,7 @@ Before submitting, ensure your plugin:
 4. Has a unique name (not already in use)
 5. Includes clear, accurate descriptions
 6. Has the proper directory structure with hooks/, agents/, and commands/ folders
+7. Is registered in `.claude-plugin/marketplace.json`
 
 ## Submission Process
 
@@ -90,9 +104,10 @@ Before submitting, ensure your plugin:
 2. Add the `.claude-plugin/` directory with a `plugin.json` metadata file
 3. Create the hooks/, agents/, and commands/ subdirectories
 4. Follow the schema and naming conventions
-5. Test your plugin structure
-6. Submit via pull request to the main repository
-7. Wait for review and approval
+5. Register the plugin in `.claude-plugin/marketplace.json`
+6. Test your plugin structure
+7. Submit via pull request to the main repository
+8. Wait for review and approval
 
 ## Questions?
 
