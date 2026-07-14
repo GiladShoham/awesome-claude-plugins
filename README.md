@@ -74,6 +74,13 @@ Browse the `plugins/` directory to discover available plugins. Each plugin inclu
 - **Weather Plugin** (`example-weather`) v1.2.0 - Get current weather information and forecasts for any location
 - **Translator Plugin** (`example-translator`) v2.0.0 - Translate text between multiple languages with high accuracy
 
+### Community Plugins
+
+- **excalidraw-skill-pack** (`isatimur/excalidraw-skill-pack`) - Opinionated Excalidraw methodology + themes so agents draw diagrams that argue, not boxes that label.
+- **presentation-skill-pack** (`isatimur/presentation-skill-pack`) - Agent authors slide decks as structured JSON, then exports to native PowerPoint, Keynote, and Google Slides.
+- **remotion-skill-pack** (`isatimur/remotion-skill-pack`) - Agents author structured Remotion video specs that render to production-ready MP4.
+- **de-slop** (`isatimur/de-slop`) - De-slops AI prose: detect slop, rewrite to a point of view, self-score, flag hollow spans instead of faking claims.
+
 ## Adding Your Plugin
 
 To add your plugin to this marketplace:

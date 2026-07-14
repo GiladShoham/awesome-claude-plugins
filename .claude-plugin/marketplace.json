@@ -22,6 +22,34 @@
     {
       "name": "example-translator",
       "source": "./plugins/example-translator"
+    },
+    {
+      "name": "excalidraw-skill-pack",
+      "source": {
+        "source": "github",
+        "repo": "isatimur/excalidraw-skill-pack"
+      }
+    },
+    {
+      "name": "presentation-skill-pack",
+      "source": {
+        "source": "github",
+        "repo": "isatimur/presentation-skill-pack"
+      }
+    },
+    {
+      "name": "remotion-skill-pack",
+      "source": {
+        "source": "github",
+        "repo": "isatimur/remotion-skill-pack"
+      }
+    },
+    {
+      "name": "de-slop",
+      "source": {
+        "source": "github",
+        "repo": "isatimur/de-slop"
+      }
     }
   ]
 }
