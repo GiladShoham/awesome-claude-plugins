@@ -1,0 +1,9 @@
+{
+  "name": "gitlawb-sidecar",
+  "version": "0.1.0",
+  "description": "Signed GitLawb mirror next to GitHub. Humans stay on origin; agents get a verifiable certificate without using the gl CLI.",
+  "author": { "name": "DevOps21133", "url": "https://github.com/DevOps21133" },
+  "repository": "https://github.com/DevOps21133/gitlawb-sidecar",
+  "license": "MIT",
+  "keywords": ["gitlawb", "github", "git", "agents", "provenance"]
+}
