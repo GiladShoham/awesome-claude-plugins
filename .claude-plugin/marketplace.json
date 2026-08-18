@@ -22,6 +22,15 @@
     {
       "name": "example-translator",
       "source": "./plugins/example-translator"
+    },
+    {
+      "name": "gitlawb-sidecar",
+      "source": {
+        "source": "github",
+        "repo": "DevOps21133/gitlawb-sidecar"
+      },
+      "description": "Signed GitLawb mirror next to GitHub. Never run gl. Never change origin.",
+      "version": "0.1.0"
     }
   ]
 }
