@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "prove-it",
+  "version": "1.0.0",
+  "description": "Stop your agent from saying \"done\" when it never checked. Captures real evidence - HTTP responses, browser network requests, console errors, screenshots - and returns a PROVEN / NOT PROVEN / UNPROVABLE verdict.",
+  "author": {
+    "name": "John Houzi",
+    "url": "https://github.com/JohnJackHouzi"
+  },
+  "homepage": "https://github.com/JohnJackHouzi/claude-skills",
+  "repository": "https://github.com/JohnJackHouzi/claude-skills",
+  "license": "MIT",
+  "keywords": ["verification", "testing", "evidence", "qa", "hallucination", "production", "playwright"]
+}

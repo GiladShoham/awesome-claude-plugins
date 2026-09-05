@@ -1,0 +1,11 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "typo-fr",
+  "version": "1.0.0",
+  "description": "French typography that survives an AI: no em dashes, correct apostrophes, accented capitals, non-breaking spaces. Enforced by a linter that never touches your code.",
+  "author": { "name": "John Houzi", "url": "https://github.com/JohnJackHouzi" },
+  "homepage": "https://github.com/JohnJackHouzi/typo-fr",
+  "repository": "https://github.com/JohnJackHouzi/typo-fr",
+  "license": "MIT",
+  "keywords": ["typography", "french", "francais", "linter", "i18n", "content"]
+}

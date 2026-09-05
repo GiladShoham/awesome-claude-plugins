@@ -22,6 +22,18 @@
     {
       "name": "example-translator",
       "source": "./plugins/example-translator"
+    },
+    {
+      "name": "prove-it",
+      "source": "./plugins/prove-it"
+    },
+    {
+      "name": "safe-worktree",
+      "source": "./plugins/safe-worktree"
+    },
+    {
+      "name": "typo-fr",
+      "source": "./plugins/typo-fr"
     }
   ]
 }
