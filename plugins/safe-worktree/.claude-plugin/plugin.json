@@ -1,0 +1,11 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "safe-worktree",
+  "version": "1.0.0",
+  "description": "Run several agents on one repository without stealing each other's work. Isolated runnable worktrees, a pre-commit drift guard, and cleanup that detects a squash merge.",
+  "author": { "name": "John Houzi", "url": "https://github.com/JohnJackHouzi" },
+  "homepage": "https://github.com/JohnJackHouzi/safe-worktree",
+  "repository": "https://github.com/JohnJackHouzi/safe-worktree",
+  "license": "MIT",
+  "keywords": ["git", "worktree", "parallel", "agents", "safety", "squash-merge"]
+}
