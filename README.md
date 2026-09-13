@@ -182,6 +182,7 @@ Individual plugins may have their own licenses - please check each plugin's repo
 For issues or questions:
 - Open an issue in this repository
 - Check the [Claude documentation](https://docs.claude.com)
+- [mblode/agent-skills](https://github.com/mblode/agent-skills) - Nobody ships AI slop on purpose. These skills make sure you don't. UI audits, typography, docs, PR review, and releases.
 - Review existing issues for similar problems
 
 ## Acknowledgments
