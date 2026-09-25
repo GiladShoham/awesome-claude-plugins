@@ -22,6 +22,15 @@
     {
       "name": "example-translator",
       "source": "./plugins/example-translator"
+    },
+    {
+      "name": "plumbward-lite",
+      "source": "./plugins/plumbward-lite",
+      "description": "Free. dry-run shows the full list before Claude deletes, moves or overwrites anything and waits for your yes; token-diet cuts the habits that burn usage limits. No setup. Measured: 0 of 30 cleanup runs changed files before asking, bare Claude 30 of 30, traces public.",
+      "category": "productivity",
+      "tags": ["safety", "cost", "free"],
+      "homepage": "https://github.com/uzayrhbusiness-afk/plumbward-lite",
+      "license": "LicenseRef-Free-Unmodified"
     }
   ]
 }

@@ -71,6 +71,7 @@ Browse the `plugins/` directory to discover available plugins. Each plugin inclu
 ### Example Plugins
 
 - **Calculator Plugin** (`example-calculator`) v1.0.0 - A simple calculator plugin for performing basic arithmetic operations
+- **Plumbward Lite** (`plumbward-lite`) v0.2.2 - Free file-safety and token-cost skills: dry-run shows the full list before anything is deleted, moved or overwritten and waits for your yes; token-diet cuts the habits that burn usage limits. [Source](https://github.com/uzayrhbusiness-afk/plumbward-lite)
 - **Weather Plugin** (`example-weather`) v1.2.0 - Get current weather information and forecasts for any location
 - **Translator Plugin** (`example-translator`) v2.0.0 - Translate text between multiple languages with high accuracy
 
