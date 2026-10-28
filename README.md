@@ -68,6 +68,10 @@ Browse the `plugins/` directory to discover available plugins. Each plugin inclu
 - **Description**: What the plugin does
 - **Author**: Plugin maintainer information
 
+### Community Plugin Definitions
+
+- [Agent Notifications](./plugins/claude-notifications-go) (`claude-notifications-go`) v1.49.11 - Desktop alerts, sounds, click-to-focus, and optional webhooks. Catalog metadata only; install the runtime from the linked upstream project.
+
 ### Example Plugins
 
 - **Calculator Plugin** (`example-calculator`) v1.0.0 - A simple calculator plugin for performing basic arithmetic operations
